@@ -40,10 +40,10 @@ while True:
     "\n" + "--- 1 for YES / 0 for NO ---"
     + "\n" + ">>> "))
 
-    if continue_string == '1':
+    if continue_string == '0':
         continue
 
-    if continue_string == '0':
+    if continue_string == '1':
         print("\n" + "--- Thank you for choosing us ---" + "\n" 
         + "--- Have a nice day ---" + "\n" 
         + "--- Don't forget to take your card ---" 
