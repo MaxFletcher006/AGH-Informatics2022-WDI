@@ -29,26 +29,30 @@ def semi_prime_number():
 #-----------------------------#
 #-2-Generating-Semi-Primes-1--#
 
-    i = 0
-    j = 1
+#    i = 0
+#    j = 1
     
     length_prime = len(prime_list)
 
-    while (j<length_prime):
-        semi_prime = prime_list[j] * prime_list[i]
-        semi_prime_list_1.append(semi_prime)
-        i += 1
-        j += 1
+#    while (j<length_prime):
+#        semi_prime = prime_list[j] * prime_list[i]
+#        semi_prime_list_1.append(semi_prime)
+#        i += 1
+#        j += 1
+
+    semi_prime_list_1=[prime_list[i]*prime_list[j] for i in range(0,length_prime) for j in range(1,length_prime)] 
 
 #-----------------------------#
 #-3-Generating-Semi-Primes-2--#
 
     i = 0
     
-    while (i<length_prime):
-        semi_prime = prime_list[i] * prime_list[i]
-        semi_prime_list_2.append(semi_prime)
-        i += 1
+#    while (i<length_prime):
+#        semi_prime = prime_list[i] * prime_list[i]
+#        semi_prime_list_2.append(semi_prime)
+#        i += 1
+ 
+    semi_prime_list_2=[prime_list[x]*prime_list[x] for x in range(length_prime)] 
     
     print("Prime numbers list: " , prime_list)
     print("First list of semi primes: " , semi_prime_list_1)
