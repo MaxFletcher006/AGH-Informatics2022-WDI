@@ -8,18 +8,13 @@ with open('test.txt', 'r') as f:
 
 print(tab)
 
-for i in tab:
-        print(i)
-        print("\n")
+while True:
 
+    n = input('==> ')
 
-        while True:
+    for row in tab:
 
-            n = input('> ')
-
-            for row in tab:
-
-                if n in row:
-                    print(row[0])
+        if n == row:
+            print(row[0])
 
 
