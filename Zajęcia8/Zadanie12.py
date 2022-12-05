@@ -1,18 +1,19 @@
-import numpy as np 
+tab=[]
 
-def ascii_convert():
+with open('test.txt', 'r') as f:
 
-    str = np.loadtxt(
-        'test.txt',
-        dtype= 'str',
-        skiprows= 1,
-    )
+    for line in f.readlines():
 
-    #ascii = np.array(str, dtype='b').tobytes().decode("ascii")
+        tab.append(line.split())
 
-    print(str)
+print(tab)
 
+while True:
 
-ascii_convert()
+    n=input('> ')
 
+    for row in tab:
+        if n in row:
+            print(row[0])
 
+            
