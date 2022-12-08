@@ -1,20 +1,16 @@
-tab=[]
+ascii_list = []
 
 with open('test.txt', 'r') as f:
 
     for line in f.readlines():
 
-        tab.append(line.split())
-
-print(tab)
+        ascii_list.append(line.split())
 
 while True:
 
-    n = input('==> ')
+    char = input('==> ')
 
-    for row in tab:
+    for row in ascii_list:
 
-        if n == row:
+        if char in row:
             print(row[0])
-
-
