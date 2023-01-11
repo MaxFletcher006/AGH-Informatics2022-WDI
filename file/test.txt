@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Hail hydra
 
 content to append
 content append
+=======
+totally different content to merge later
+>>>>>>> new_branch_to_merge_later
